@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: ydc97
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+description: '个人博客'
+keywords: '个人'
+author: ydc97
+language: zh-CN
 timezone: ''
 
 # URL
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title:md  # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -61,7 +61,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 6
   order_by: -date
 
 # Category & Tag
@@ -101,7 +101,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repository: git@github.com:ydc97/ydc97.github.io.git
+  branch: main
+
 
 # 本地搜索系统
 search:

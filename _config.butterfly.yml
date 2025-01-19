@@ -105,7 +105,8 @@ footer_img: false
 
 # Website Background(设置网站背景)
 # Can set it to color or image url
-background: url(https://source.fomal.cc/img/home_bg.webp)
+# background: url(https://source.fomal.cc/img/home_bg.webp)
+background: https://source.fomal.cc/img/home_bg.webp
 
 cover:
   # Disable the cover or not

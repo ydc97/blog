@@ -1,0 +1,35 @@
+
+
+
+---
+有时候会遇到服务器网站。只可以通过域名访问。而不允许ip访问。防止域名恶意解析，tomcat可以实现这个简单功能。
+
+1，禁止ip访问项目 2，只允许绑定域名访问
+
+环境：tomcat7  [外网](https://so.csdn.net/so/search?q=%E5%A4%96%E7%BD%91&spm=1001.2101.3001.7020)地址：114.113.100.166   域名：binge.com
+
+打开tomcat的配置文件，server.[xml](https://so.csdn.net/so/search?q=xml&spm=1001.2101.3001.7020)，找到Engine节点修改如下：
+
+```
+&lt;Engine&nbsp;name="Catalina"&nbsp;defaultHost="www.binge.com"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Host&nbsp;name="www.myTest.com"&nbsp;&nbsp;appBase="webapps"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unpackWARs="true"&nbsp;autoDeploy="true"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlValidation="false"&nbsp;xmlNamespaceAware="false"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Host&nbsp;name="114.112.100.166"&nbsp;&nbsp;appBase="ipapps"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unpackWARs="true"&nbsp;autoDeploy="true"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlValidation="false"&nbsp;xmlNamespaceAware="false"/&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Engine&gt;
+```
+
+或者直接在server.xml文件使用自己域名绑定
+```
+<Host name="www.binge.com"  appBase="webapps"  
+            unpackWARs="true" autoDeploy="true"  
+            xmlValidation="false" xmlNamespaceAware="false">
+
+</Host>
+```
+
+这样其他域名就算指向过来也访问不了。
+
+转载于:https://blog.51cto.com/bin666/1925097

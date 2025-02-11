@@ -1,0 +1,110 @@
+
+
+
+---
+**【声明】**
+
+欢迎转载，但请保留文章原始出处→\_→
+
+生命壹号：[http://www.cnblogs.com/smyhvae/](http://www.cnblogs.com/smyhvae/)
+
+文章来源：[http://www.cnblogs.com/smyhvae/p/3788534.html](http://www.cnblogs.com/smyhvae/p/3788534.html)
+
+**【正文】**
+
+**1、安装JDK开发环境**
+
+下载网站：[http://www.oracle.com/](http://www.oracle.com/index.html)
+
+[![6b9eaac7-7ad0-4267-9319-e6e15b32c9cf[1]](https://images0.cnblogs.com/blog/641601/201406/141837064202858.png "6b9eaac7-7ad0-4267-9319-e6e15b32c9cf[1]")](https://images0.cnblogs.com/blog/641601/201406/141837022175075.png)
+
+[![dd697eb7-69ef-4361-9d6a-954cb9816056[1]](https://images0.cnblogs.com/blog/641601/201406/141837118586696.png "dd697eb7-69ef-4361-9d6a-954cb9816056[1]")](https://images0.cnblogs.com/blog/641601/201406/141837092333398.png)
+
+[![d8902921-5d36-4c68-adf4-b82b56f1c68c](https://images0.cnblogs.com/blog/641601/201406/141837135613909.png "d8902921-5d36-4c68-adf4-b82b56f1c68c")](https://images0.cnblogs.com/blog/641601/201406/141837129834252.png)
+
+开始安装JDK：
+
+[![d47ed425-94b4-4413-83dd-c62d8081168f[1]](https://images0.cnblogs.com/blog/641601/201406/141837152804351.jpg "d47ed425-94b4-4413-83dd-c62d8081168f[1]")](https://images0.cnblogs.com/blog/641601/201406/141837143894724.jpg)
+
+修改安装目录如下：
+
+[![77aa84d8-4f3b-44cd-9461-327a7962286f[2]](https://images0.cnblogs.com/blog/641601/201406/141837169365577.jpg "77aa84d8-4f3b-44cd-9461-327a7962286f[2]")](https://images0.cnblogs.com/blog/641601/201406/141837161708679.jpg)
+
+确定之后，单击“下一步”。
+
+注：当提示安装JRE时，可以选择不要安装。
+
+**2、配置环境变量：**
+
+对于Java程序开发而言，主要会使用JDK的两个命令：javac.exe、java.exe。路径：C:\\Java\\jdk 1.7.0 \_09\\bin。但是这些命令由于不属于windows自己的命令，所以要想使用，就需要进行路径配置。 
+
+单击“计算机-属性-高级系统设置”，单击“环境变量”。在“系统变量”栏下单击“新建”，创建新的系统环境变量。
+
+[![50aa00df-6bb9-471c-81a7-363845b6f2b3](https://images0.cnblogs.com/blog/641601/201406/141837183747806.png "50aa00df-6bb9-471c-81a7-363845b6f2b3")](https://images0.cnblogs.com/blog/641601/201406/141837179201878.png)
+
+**(1)新建->变量名"JAVA\_HOME"，变量值"C:\\Java\\jdk1.8.0\_05"（即JDK的安装路径）  
+(2)编辑->变量名"Path"，在原变量值的最后面加上“;%JAVA\_HOME%\\bin;%JAVA\_HOME%\\jre\\bin”  
+(3)新建->变量名“CLASSPATH”,变量值“.;%JAVA\_HOME%\\lib;%JAVA\_HOME%\\lib\\dt.jar;%JAVA\_HOME%\\lib\\tools.jar”**
+
+如：**JAVA\_HOME环境变量的操作如下：**
+
+[![23f073bb-cc49-43c1-8da1-099f9c18dda3[3]](https://images0.cnblogs.com/blog/641601/201406/141837213112074.png "23f073bb-cc49-43c1-8da1-099f9c18dda3[3]")](https://images0.cnblogs.com/blog/641601/201406/141837207951633.png)
+
+[![01747df9-c309-438d-a6f7-ea68f43c416c[1]](https://images0.cnblogs.com/blog/641601/201406/141837222804145.jpg "01747df9-c309-438d-a6f7-ea68f43c416c[1]")](https://images0.cnblogs.com/blog/641601/201406/141837218113988.jpg)
+
+**3、确认环境配置是否真确：**
+
+在控制台分别输入java，javac，java -version 命令，出现如下所示的JDK的编译器信息，包括修改命令的语法和参数选项等信息。
+
+java命令：
+
+[![3aa10479-a799-4805-b97f-c99c9f4c698c[1]](https://images0.cnblogs.com/blog/641601/201406/141837234679916.png "3aa10479-a799-4805-b97f-c99c9f4c698c[1]")](https://images0.cnblogs.com/blog/641601/201406/141837228891261.png)
+
+[![08c7092a-0487-46c1-9d45-024867dfc5e2[4]](https://images0.cnblogs.com/blog/641601/201406/141837245308258.png "08c7092a-0487-46c1-9d45-024867dfc5e2[4]")](https://images0.cnblogs.com/blog/641601/201406/141837238112644.png)
+
+javac命令：
+
+[![6fa0a9a4-77f6-413f-bbdc-9f7afe093061[4]](https://images0.cnblogs.com/blog/641601/201406/141837262642929.png "6fa0a9a4-77f6-413f-bbdc-9f7afe093061[4]")](https://images0.cnblogs.com/blog/641601/201406/141837255456315.png)
+
+java -version命令：
+
+[![c458fc01-02e6-4c27-b5bb-3fce15202360[4]](https://images0.cnblogs.com/blog/641601/201406/141837281081398.png "c458fc01-02e6-4c27-b5bb-3fce15202360[4]")](https://images0.cnblogs.com/blog/641601/201406/141837267644843.png)
+
+**4、在控制台下验证第一个java程序：**
+
+```
+<span><span>public</span> <span>class</span><span> Test {
+    </span><span>public</span> <span>static</span> <span>void</span> main(String[] args) {    
+    System.out.println("Hello Java"<span>);
+    }
+}</span></span>
+```
+
+用记事本编写好，点击“保存”，并存入C盘根目录后，输入javac Test.java和java Test命令，即可运行程序（打印出结果“Hello Java”）。注：这两个命令是在C:\\java\\jdk1.8.0\_20\\bin目录下。
+
+**程序解析：** 
+
+首先编写java源代码程序，扩展名.java；
+
+在命令行模式中，输入命令：javac 源文件名.java，对源代码进行编译，生成class字节码文件；
+
+编译完成后，如果没有报错信息，输入命令：java HelloWorld，对class字节码文件进行解释运行,执行时不需要添加.class扩展名。见下图：  
+![](https://images0.cnblogs.com/blog/641601/201412/041339524368671.jpg)
+
+注：若在CMD中输入javac test.java命令后，显示'javac'不是内部或外部命令，原因是因为没有提前安装好JDK开发环境或环境变量配置有误。 
+
+![](https://images0.cnblogs.com/i/641601/201406/170906471457183.png)
+
+**关联源码：**
+
+源码位置：C:\\java\\jdk1.8.0\_20\\src.zip
+
+## 我的公众号
+
+想学习**代码之外的软技能**？不妨关注我的微信公众号：千古壹号。
+
+扫一扫，你将发现另一个全新的世界，而这将是一场美丽的意外：
+
+![](http://7sby7r.com1.z0.glb.clouddn.com/cnblogs/%E7%94%9F%E5%91%BD%E5%9B%A2%E9%98%9F%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+
+![](https://img2018.cnblogs.com/blog/641601/201812/641601-20181213105604448-1057481758.jpg)

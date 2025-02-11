@@ -1,0 +1,44 @@
+
+
+
+三台机器之间ssh互信配置
+环境介绍：
+192.168.69.137    hadoop1
+192.168.69.138    hadoop2
+192.168.69.139    hadoop3
+
+# 步骤一：
+# 每个节点都执行
+ssh-keygen -t rsa # 一路回车
+
+
+# 将公钥添加到认证文件中
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+# 并设置authorized_keys的访问权限
+chmod 600 ~/.ssh/authorized_keys
+
+# 只要在一个节点执行即可。这里在 192.168.69.137上执行
+ssh 192.168.69.138 cat ~/.ssh/id_rsa.pub >>~/.ssh/authorized_keys
+ssh 192.168.69.139 cat ~/.ssh/id_rsa.pub >>~/.ssh/authorized_keys
+
+
+# 分发整合后的文件到其它节点
+scp ~/.ssh/authorized_keys 192.168.69.138:~/.ssh/
+scp ~/.ssh/authorized_keys 192.168.69.139:~/.ssh/
+
+# 测试时，第一次，需要输入密码，之后就不需要输入密码了。
+# 在192.168.69.137上测试
+ssh 192.168.69.138
+ssh 192.168.69.139
+
+# 在192.168.69.138上测试
+ssh 192.168.69.137
+ssh 192.168.69.139
+
+# 在192.168.69.139上测试
+ssh 192.168.69.138
+ssh 192.168.69.137
+
+
+# 删除，重新操作
+#  rm -fr /root/.ssh/安谧 

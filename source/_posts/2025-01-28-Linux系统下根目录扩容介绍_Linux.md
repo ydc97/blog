@@ -1,7 +1,7 @@
 ---
 title: Linux系统下根目录扩容介绍
-date: 2025-01-18 13:55
-update: 2025-01-18 13:55
+date: 2020-01-18 13:55
+update: 2020-01-18 13:55
 tags: Linux
 categories: 运维
 ---

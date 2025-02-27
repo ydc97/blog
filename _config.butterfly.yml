@@ -591,7 +591,7 @@ disqusjs:
 # Livere
 # https://www.livere.com/
 livere:
-  uid: MTAyMC82MDQyOC8zNjg5OA==
+  uid: 
 
 # Gitalk
 # https://github.com/gitalk/gitalk
@@ -1077,6 +1077,9 @@ inject:
     # - <script src="xxxx"></script>
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
+    - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
+    - <script defer src="/js/lunar.js"></script> # 农历计算
+    - <script defer src="/js/day.js"></script> # 节日弹窗
     
 
 # CDN Settings

@@ -1,11 +1,11 @@
 ---
-title: "Eshead查询格式化 es head查询数据_jkfox的技术博客_51CTO博客"
-source: "https://blog.51cto.com/u_13479/10451601"
-date: "2025-03-03T14:41:47+08:00"
-update: "2025-03-03T14:41:47+08:00"
+title: Eshead查询格式化 es head查询数据
+source: https://blog.51cto.com/u_13479/10451601
+date: 2025-03-03T14:41:47+08:00
+update: 2025-03-03T14:41:47+08:00
 tags:
-  - "Linux"
-categories: "运维"
+  - Linux
+categories: 运维
 ---
 **文章目录**
 

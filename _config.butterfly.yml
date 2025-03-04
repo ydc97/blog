@@ -69,7 +69,7 @@ favicon: https://www.fomal.cc/favicon.ico
 
 # 网站头像
 avatar:
-  img: /img/butterfly-icon.png
+  img: https://pic.ydc97.fun//img/601a8b9a93bd81dd068a82160457463f.jpeg
   effect: false
 
 # Disable all banner images

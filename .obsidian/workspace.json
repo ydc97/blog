@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Eshead查询格式化 es head查询数据.md",
+                "file": "source/_posts/Elasticsearch-head使用及ES相关概念.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Eshead查询格式化 es head查询数据"
+              "title": "Elasticsearch-head使用及ES相关概念"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.5
+    "width": 395.5
   },
   "right": {
     "id": "7e7c082870bdde94",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Eshead查询格式化 es head查询数据.md",
+                "file": "source/_posts/Elasticsearch-head使用及ES相关概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Eshead查询格式化 es head查询数据 的反向链接列表"
+              "title": "Elasticsearch-head使用及ES相关概念 的反向链接列表"
             }
           },
           {
@@ -173,8 +173,9 @@
   },
   "active": "6d86bb133bb4d775",
   "lastOpenFiles": [
-    "source/_posts/2025-01-28-定时任务的设置.md",
     "source/_posts/Eshead查询格式化 es head查询数据.md",
+    "source/_posts/Elasticsearch-head使用及ES相关概念.md",
+    "source/_posts/2025-01-28-定时任务的设置.md",
     "source/_posts/2025-01-28-ubuntu24微信无法打开.md"
   ]
 }

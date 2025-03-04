@@ -18,7 +18,7 @@ categories: "运维"
 **正文**
 
 　　elasticsearch-head安装和介绍已在上一篇讲了。
-　　![](https://pic.ydc97.fun//img/601a8b9a93bd81dd068a82160457463f.jpeg)
+　　
 
 在浏览器访问[http://localhost:9100](http://localhost:9100/)，可看到如下界面，表示启动成功：
 

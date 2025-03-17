@@ -1106,6 +1106,9 @@ CDN:
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:
+    algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
+    instantsearch_v4: https://cdn.staticfile.org/instantsearch.js/4.49.2/instantsearch.production.min.js
+    pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     # algolia_search:
     # aplayer_css:
     # aplayer_js:

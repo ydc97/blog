@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "6328a2405f14cbf4",
+        "id": "0d2cf2a9eb63a9b0",
         "type": "tabs",
         "children": [
           {
-            "id": "6d86bb133bb4d775",
+            "id": "e2cc1fdf9e7f9e10",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Elasticsearch-head使用及ES相关概念.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Elasticsearch-head使用及ES相关概念"
+              "title": "新标签页"
             }
           }
         ]
@@ -171,7 +167,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6d86bb133bb4d775",
+  "active": "e2cc1fdf9e7f9e10",
   "lastOpenFiles": [
     "source/_posts/ElasticSearch基本查询.md",
     "source/_posts/Elasticsearch-head使用及ES相关概念.md",
